@@ -1,0 +1,117 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+}
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/header-bg.jpg) center / cover no-repeat fixed;
+}
+
+nav {
+    width: 80%;
+    height: 60px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+nav .first-ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav .first-ul li a {
+    color: white;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.pages a {
+    position: relative;
+}
+
+.pages a i {
+    font-size: 8px;
+}
+
+.pages .second-ul {
+    list-style: none;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 10px 80px 10px 10px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.pages .second-ul li {
+    padding: 10px;
+}
+
+.pages .second-ul li a {
+    color: #000;
+}
+
+.pages:hover .second-ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+.second-ul li a:hover {
+    color: #fab700;
+}
+.text{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    transform: translateY(30%);
+}
+.text span{
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.text h2{
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #fff;
+    font-size: 72px;
+}
+.text p{
+    color: #f8f8f8;
+    text-align: center;
+    width: 45%;
+}
+.text button{
+    color: #fff;
+    background-color: #fab700;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    padding: 12px 30px;
+    border: solid #fab700;
+    font-weight: 600;
+}
